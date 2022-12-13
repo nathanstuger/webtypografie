@@ -1,0 +1,1647 @@
+/* **********************************************
+Basic mechanics
+Hide all paragraphs by default
+Show them when they receive the class 'on'
+Hide them when they receive the class 'off'
+Feel free to adjust the defaults to your needs.
+********************************************** */
+#closed-captions p {
+    opacity: 0;
+    transition: .05s;
+    position: absolute;
+}
+
+#closed-captions .on {
+    opacity: 1;
+}
+
+#closed-captions .off {
+    transition: .2s;
+    opacity: 0;
+}
+
+.voice1 {
+    font-style: italic;
+}
+
+.voice2 {
+    font-weight: bold;
+}
+
+.voice3 {
+    color: black;
+    font-family: cursive;
+}
+
+/* **********************************************
+The first paragraph, with extended timing for 
+	all siblings. Basically what it does is that
+	it shows the text after a delay, which 
+	corresponds with the time that the word is
+	spoken.
+You probably want to change the styling.
+********************************************** */
+.p0 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p0.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p0.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .4s;
+    margin-right: -.25em;
+    font-weight: 400;
+}
+
+.p0.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s .5s;
+    margin-right: -.25em;
+    font-weight: 600;
+}
+
+.p0.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s .7s;
+    margin-right: -.25em;
+    font-weight: 800;
+}
+
+.p0.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s 1.1s;
+    margin-right: -.25em;
+    font-family: "brenner sans";
+}
+
+.p0.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 0s 1.4s;
+    margin-right: -.25em;
+    font-family: "brenner display";
+}
+
+.p0.on span:nth-of-type(7) {
+    opacity: 1;
+    transition: 0s 1.7s;
+    margin-right: -.25em;
+    font-family: "brenner script";
+}
+
+.p0.on span:nth-of-type(8) {
+    opacity: 1;
+    transition: 0s 2s;
+    font-family: "brenner script";
+}
+
+.p0.on span:nth-of-type(9) {
+    opacity: 1;
+    transition: 0s 3s;
+    font-family: "brenner Sans condensed";
+}
+
+.p0.on span:nth-of-type(10) {
+    opacity: 1;
+    transition: 0s 3.2s;
+    font-family: "brenner mono";
+}
+
+.p0.on span:nth-of-type(11) {
+    opacity: 1;
+    transition: 0s 3.7s;
+    font-family: "brenner slab";
+}
+
+.p0.on {
+    font-size: 2em;
+    color: white;
+    padding: 0.2em;
+    background-color: black;
+    position: relative;
+    top: 700px;
+
+
+}
+
+.p1.on {
+    font-size: 2em;
+    padding: 0.2em;
+    color: lightgreen;
+    background-color: black;
+    position: relative;
+    top: 700px;
+    margin-left: 1235px;
+
+}
+
+.p2.on {
+    font-size: 2em;
+    padding: 0.2em;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 700px;
+
+}
+
+
+
+.p3.on {
+    font-size: 2em;
+    padding: 0.2em;
+    color: lightgreen;
+    background-color: black;
+    position: relative;
+    top: 700px;
+    margin-left: 745px;
+
+
+
+}
+
+.p4.on {
+    font-size: 2em;
+    padding: 0.2em;
+    color: lightgreen;
+    background-color: black;
+    position: relative;
+    top: 700px;
+    margin-left: 780px;
+
+
+
+}
+
+.p5.on {
+    font-size: 2em;
+    padding: 0.2em;
+    color: lightgreen;
+    background-color: black;
+    position: relative;
+    top: 700px;
+    margin-left: 620px;
+
+
+}
+
+
+.p6.on {
+    /*    FUCK of skin job*/
+    font-size: 2em;
+    padding: 0.2em;
+    color: red;
+    background-color: black;
+    position: relative;
+    top: 340px;
+    margin-left: 550px;
+
+}
+
+
+
+.p7.on {
+    font-size: 2em;
+    color: lightgreen;
+    background-color: black;
+    position: relative;
+    top: 700px;
+    margin-left: 370px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p8.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p9.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+
+}
+
+
+
+.p10.on {
+    font-size: 2em;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 80px;
+    left: 600px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p11.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 500px;
+    left: 200px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+.p12.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+
+.p13.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 400px;
+    left: 1000px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+
+
+.p14.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 600px;
+    left: 1000px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p15.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+
+.p16.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 300px;
+    margin-left: 30px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p17.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 400px;
+    margin-left: 40px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p18.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p19.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 400px;
+    left: 600px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+
+.p20.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p21.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 400px;
+    left: 700px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p22.on {
+    font-size: 2em;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    left: 600px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p23.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p24.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 300px;
+    left: 400px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p25.on {
+    font-size: 2em;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 20px;
+    left: 400px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p26.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p27.on {
+    font-size: 2em;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    left: 800px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p28.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 200px;
+    left: 800px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p29.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p30.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 300px;
+    left: 500px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p31.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p32.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 600px;
+    left: 480px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p33.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 600px;
+    left: 80px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p34.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p35.on {
+    font-size: 2em;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 200px;
+    left: 700px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p36.on {
+    font-size: 2em;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 80px;
+    left: 200px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p37.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p38.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 350px;
+    left: 670px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p39.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p40.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 210px;
+    left: 400px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p41.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+
+    padding: 0.2em;
+    background-color: black;
+}
+
+
+.p42.on {
+    font-size: 2.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+}
+
+.p43.on {
+    font-size: 2.8em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+
+    padding: 0.2em;
+    background-color: black;
+}
+
+
+.p44.on {
+    font-size: 4em;
+    color: white;
+    position: relative;
+    top: 300px;
+    margin-left: 500px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p45.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 350px;
+    margin-left: 600px;
+    padding: 0.2em;
+    background-color: black;
+
+
+
+}
+
+
+.p46.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 350px;
+    margin-left: 500px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p47.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 350px;
+    margin-left: 550px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p48.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+.p49.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p50.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+.p51.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p52.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+.p53.on {
+    font-size: 2em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p54.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+
+.p55.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p56.on {
+    font-size: 1.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p57.on {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p58.on {
+    font-size: 1.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p59.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+
+.p60.on {
+    font-size: 1.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p61.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p62.on {
+    font-size: 1.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p63.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p64.on {
+    font-size: 1.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p65.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p66.on {
+    font-size: 1.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+.p67.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p68.on {
+    font-size: 1.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p69.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p70.on {
+    font-size: 1.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p71.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p72.on {
+    font-size: 1.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+.p73.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+
+.p74.on {
+    font-size: 1.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p75.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p76.on {
+    font-size: 1.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p77.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+}
+
+
+.p78.on {
+    font-size: 1.5em;
+    color: lightgreen;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p79.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+
+.p80.on {
+    font-size: 2em;
+    color: ghostwhite;
+    position: relative;
+    top: 200px;
+    margin-left: 20px;
+    padding: 0.2em;
+    background-color: black;
+
+
+}
+
+/* **********************************************
+Sounds.
+	You can style the whole body, or you can 
+	style anything within the body the moment
+	a sound starts.
+*********************************************  */
+
+/* The moment the class .sound1 is added to the body, the background is yellow */
+
+
+.sound0 #video-mask {
+    animation-name: sound0;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+
+
+@keyframes sound0 {
+
+    0%,
+    100% {
+        box-shadow: none;
+    }
+
+    20% {
+        box-shadow: 0em 0em 1em 10em black;
+    }
+
+    50% {
+        box-shadow: 0em 0em 1em 5em grey;
+    }
+}
+
+.sound1 #video-mask {
+    animation-name: shadowred;
+    animation-duration: 1.6s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes shadowred {
+
+    0%,
+    100% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow: 0em 0em 1em 3em red;
+    }
+}
+
+/*
+#video-container{
+    position: relative;
+}
+ .sound1 #video-container::before {
+    content: "";
+    position: absolute; 
+    left:0;
+    top:0;
+    height: 100%;
+    width: 50%;
+    box-shadow: 0em 0em 1em 2em blue;
+    z-index: -1;
+   
+}
+
+ .sound1 #video-container::after {
+    content: "";
+    position: absolute; 
+    right:0;
+    top:0;
+    height: 100%;
+    width: 50%;
+    box-shadow: 0em 0em 1em 2em red;
+    z-index: -1;
+   
+}
+*/
+
+
+
+.sound2 #video-mask {
+    animation-name: blue2;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes blue2 {
+
+    0%,
+    100% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow: 0em 0em 1em 1em blue;
+    }
+}
+
+.sound3 {
+    background-color: black;
+     !important;
+}
+
+.sound3 #video-mask {
+    animation-name: redyellow;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes redyellow {
+
+    0%,
+    100% {}
+
+    100% {
+        box-shadow: 0em 0em 1em 2em red;
+    }
+
+    50% {
+        box-shadow: 0em 0em 1em 1em yellow;
+    }
+
+}
+
+.sound3 #video-container {
+    animation-name: sound3;
+    animation-duration: 1s;
+
+}
+
+@keyframes sound3 {
+    30% {
+        transform: scale(1.2);
+    }
+
+    40%,
+    60% {
+        transform: rotate(-2deg) scale(1.2);
+    }
+
+    50% {
+        transform: rotate(2deg) scale(1.2);
+    }
+
+    70% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.sound5 #video-mask {
+    animation-name: sound5;
+    animation-duration: 2.4s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes sound5 {
+
+    0%,
+    100% {
+        box-shadow: none;
+    }
+
+    100% {
+        box-shadow: 0em 0em 1em 2em red;
+    }
+
+    50% {
+        box-shadow: 0em 0em 1em 1em yellow;
+    }
+
+}
+
+
+.sound5 #video-container {
+    animation-name: sound51;
+    animation-duration: 1s;
+}
+
+@keyframes sound51 {
+    30% {
+        transform: scale(1.2);
+    }
+
+    40%,
+    60% {
+        transform: rotate(-2deg) scale(1.2);
+    }
+
+    50% {
+        transform: rotate(2deg) scale(1.2);
+    }
+
+    70% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sound5 {
+    background-color: none;
+     !important;
+}
+
+
+.sound7 #video-mask {
+    animation-name: sound7;
+    animation-duration: 1200ms;
+    animation-iteration-count: 1;
+
+}
+
+
+@keyframes sound7 {
+
+    0%,
+    100% {
+        box-shadow: none;
+    }
+
+    100% {
+        box-shadow: 0em 0em 1em 2em red;
+    }
+
+    50% {
+        box-shadow: 0em 0em 1em 1em yellow;
+    }
+
+}
+
+
+.sound8 #video-mask {
+    animation-name: sound8;
+    animation-duration: 45s;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+
+
+}
+
+@keyframes sound8 {
+
+    0%,
+    100% {
+        0% transform: scale(100%);
+    }
+
+    100% {
+        transform: scale(20%);
+    }
+
+
+
+}
+
+.sound8 #video-container {
+    background: url(images/7vqd.gif) 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.sound8 {
+    animation: fade 40s forwards;
+    background-color: rgba(0, 0, 0, 1);
+    animation-delay: 1s;
+
+}
+
+@keyframes fade {
+    from {
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    to {
+        background-color: rgba(242, 245, 169, 0);
+    }
+
+}
+
+
+.sound10 #video-mask {
+    animation-name: sound10;
+    animation-duration: 100ms;
+    animation-iteration-count: 1;
+
+
+}
+
+
+@keyframes sound10 {
+
+    0%,
+    100% {
+        box-shadow: none;
+    }
+
+    0% {
+        transform: scale(120%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+
+}
+
+.sound10 {
+    animation: blackfade;
+    animation-duration: 500ms;
+
+
+
+}
+
+@keyframes blackfade {
+
+    0%,
+    100% {}
+
+    80% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: black;
+    }
+
+}
+
+
+
+.sound11 #video-mask {
+    animation-name: sound11;
+    animation-duration: 500ms;
+    animation-iteration-count: 2;
+    
+}
+
+
+@keyframes sound11 {
+    
+   
+
+    0%,
+    100% {}
+
+    20% {
+        box-shadow: 0em 0em 1em 2em red;
+    }
+
+    30% {
+        box-shadow: 0em 0em 1em 1em blue;
+    }
+
+    60% {
+        box-shadow: 0em 0em 1em 1em red;
+    }
+
+    80% {
+        box-shadow: 0em 0em 1em 1em blue;
+    }
+
+    100% {
+        box-shadow: 0em 0em 1em 1em red;
+    }
+}
+
+.sound12 {
+    
+    background: url(images/7vqd.gif) 0 0;
+    
+
+   
+}
+
+
+
+.sound13 #video-mask {
+    animation-name: sound13;
+    animation-duration: 300ms;
+    animation-iteration-count: 2;
+    
+}
+
+
+@keyframes sound13 {
+    
+   
+
+    0%,
+    100% {}
+
+    20% {
+        box-shadow: 0em 0em 1em 2em yellow;
+    }
+
+    30% {
+        box-shadow: 0em 0em 1em 1em blue;
+    }
+
+    60% {
+        box-shadow: 0em 0em 1em 1em yellow;
+    }
+
+    80% {
+        box-shadow: 0em 0em 1em 1em yellow;
+    }
+
+    100% {
+        box-shadow: 0em 0em 1em 1em blue;
+    }
+}
+
+.sound14  {
+   background-image: none;
+    
+}
+
+
+
+
+
+
+
+/*
+.sound8 #video-mask{
+ 
+  background: #f50057;
+  animation: zoom ease infinite;
+animation-duration: 84s;
+    animation-delay: 2s;
+
+    
+}
+
+@keyframes zoom{
+  0%,100% {
+    transform: scale(100%);
+  }
+  
+ 100% {
+    transform: scale(80%);
+  }
+}
+*/
+
+
+/*
+
+.sound10 { 
+    animation: fade 25s forwards;
+    background-color:rgba(0,0,0, 1);
+     background-image:none;
+}
+
+@keyframes fade {
+    from {background-color:rgba(0, 0, 0, 1);}
+    to {background-color:rgba(242, 245, 169, 0);}
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* **********************************************
+Basic layout.
+	Place the video in the center of the page.
+*********************************************  */
+
+body {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+}
+
+#video-container {
+    margin: auto;
+}
+
+#video-mask {
+    aspect-ratio: 240.5/100;
+    display: grid;
+    overflow: hidden;
+    align-content: center;
+    transition: 1s;
+}
+
+iframe {
+    width: 80vw;
+    height: 53.33333333vw;
+    margin-top: -0.35vw;
+}
